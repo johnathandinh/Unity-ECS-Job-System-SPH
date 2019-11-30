@@ -376,7 +376,7 @@ public class SPHSystem : JobComponentSystem
         {
             // Get the current chunk setting
             SPHParticle settings = uniqueTypes[typeIndex];
-            SPHCharacterGroup.SetFilter(settings);
+            SPHCharacterGroup.SetSharedComponentFilter(settings);
 
             // Cache the data
             JobHandle particlesPositionJobHandle;
